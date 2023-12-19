@@ -1,0 +1,60 @@
+* {
+    user-select: none;
+    font-family: Comic Sans MS;
+    cursor: url("assets/costume1.png"), auto;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+    background: url(assets/backdrop2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+#upgrade-list {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+#stats {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 10px solid black;
+    box-shadow: 5px 5px rgb(92, 92, 92);
+    padding: 10px;
+    background: white;
+}
+
+
+#riqueman {
+    background-image: url(assets/riqueman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+#riqueman:active {
+    cursor: url("assets/costume2.png"), auto;
+}
+
+
+#dinheiros, h2 {
+    font-family: Comic Sans MS;
+
+}
+
+#dinheiros {
+    font-size: 80px;
+}

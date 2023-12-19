@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Feliz Aniversário Riqueman!</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    </head>
+    <body>
+        
+        <div id="presente"></div>
+
+    </body>
+    <script>
+
+        const presente = document.getElementById("presente")
+        const body = document.body
+        const chomp = new Audio("assets/chomp.mp3")
+        const cheer = new Audio("assets/cheer.mp3")
+        const musica = new Audio("assets/musica.mp3")
+
+        presente.onclick = function() {
+            presente.style.transition = "opacity 3s ease-in-out";[]
+            presente.style.opacity = 0;
+        }
+        presente.addEventListener("transitionend", function() {
+            cheer.play()
+            musica.play()
+            
+            presente.style.display = "none"
+            body.style.backgroundImage = "url(assets/bolo.png)"
+            body.addEventListener("click", function() {
+                body.style.backgroundImage = "url(assets/bolo2.png)"
+                chomp.play()
+                const navegar = document.createElement("div")
+                navegar.setAttribute("id", "navegar")
+                
+                const logorks = document.createElement("div")
+                const logovid = document.createElement("div")
+                const logoyt = document.createElement("div")
+                const logotech = document.createElement("div")
+                const logorafa = document.createElement("div")
+                
+                logorks.setAttribute("id", "logorks")
+                logovid.setAttribute("id", "logovid")
+                logoyt.setAttribute("id", "logoyt")
+                logotech.setAttribute("id", "logotech")
+                logorafa.setAttribute("id", "logorafa")
+            
+                
+                document.body.appendChild(navegar)
+                
+                document.getElementById("navegar").appendChild(logorks)
+                document.getElementById("navegar").appendChild(logovid)
+                document.getElementById("navegar").appendChild(logoyt)
+                document.getElementById("navegar").appendChild(logotech)
+                document.getElementById("navegar").appendChild(logorafa)
+
+                document.getElementById("logorks").addEventListener("click", function() {
+                    window.open("/assets/rks/index.html", "_blank")
+                })
+                document.getElementById("logovid").addEventListener("click", function() {
+                    window.open("/assets/tnd.webm", "_blank")
+                })
+                document.getElementById("logoyt").addEventListener("click", function() {
+                    window.open("https://www.youtube.com/watch?v=_3TpfblJkXA", "_blank")
+                })
+                document.getElementById("logotech").addEventListener("click", function() {
+                    window.open("", "_blank")
+                })
+                document.getElementById("logorafa").addEventListener("click", function() {
+                    window.open("", "_blank")
+                })
+
+
+            }, {once: true})
+        })
+        
+
+        
+
+    </script>
+</html>

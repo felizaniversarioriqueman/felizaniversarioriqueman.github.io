@@ -1,0 +1,58 @@
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#presente {
+    background-image: url(assets/presente.png);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#presente:hover {
+    transform: scale(1.1);
+}
+
+#navegar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 100;
+    transition: opacity ease 2s;
+    display: flex;
+    
+}
+
+#logorks {
+    background-image: url(assets/logorks.jpg);
+}
+
+
+#logovid {
+    background-image: url(assets/logovideo.jpg);
+}
+
+#logoyt {
+    background-image: url(assets/logoyt.jpg);
+}
+
+#logorks, #logovid, #logoyt {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+#logorks:hover, #logovid:hover {
+    cursor: pointer;
+}
